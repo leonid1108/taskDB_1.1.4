@@ -16,7 +16,6 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws SQLException {
-        // реализуйте алгоритм здесь
         Util.getConnection();
 
         UserServiceImpl userServiceImpl = new UserServiceImpl();
@@ -28,7 +27,6 @@ public class Main {
         userServiceImpl.saveUser("Гоша", "Шляпочкин", (byte) 22);
 
         //userDaoJDBC.removeUserById(6);
-
 
         List<User> list = userServiceImpl.getAllUsers();
         System.out.println(list);
